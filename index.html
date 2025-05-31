@@ -2,287 +2,220 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajay Patel - Full Stack Developer</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Ajay Patel - Software Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .fade-in { opacity: 0; animation: fadeIn 0.8s ease-in forwards; }
+        @keyframes fadeIn { to { opacity: 1; } }
+        .section-padding { padding: 4rem 1rem; }
+        @media (min-width: 768px) { .section-padding { padding: 6rem 1rem; } }
+    </style>
 </head>
 
-<body class="bg-gray-900 text-gray-100" style="scroll-behavior: smooth;">
+<body class="bg-white text-gray-800 font-light leading-relaxed">
     <!-- Navigation -->
-    <nav class="hidden md:flex  fixed top-0 w-full bg-gray-900 bg-opacity-90 backdrop-blur-lg z-50 border-b border-gray-800">
-        <div class="container mx-auto px-6 py-3">
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <span class="text-2xl font-bold text-blue-500">Ajay Patel</span>
-                <div class="space-x-8">
-                    <a href="#home" class="hover:text-blue-500 transition-colors">Home</a>
-                    <a href="#about" class="hover:text-blue-500 transition-colors">About</a>
-                    <a href="#skills" class="hover:text-blue-500 transition-colors">Skills</a>
-                    <a href="#experience" class="hover:text-blue-500 transition-colors">Experience</a>
-                    <a href="#projects" class="hover:text-blue-500 transition-colors">Projects</a>
-                    <a href="#education" class="hover:text-blue-500 transition-colors">Education</a>
-                    <a href="#contact" class="hover:text-blue-500 transition-colors">Contact</a>
+                <span class="text-xl font-medium">Ajay Patel</span>
+                <div class="hidden md:flex space-x-8 text-sm">
+                    <a href="#about" class="hover:text-gray-600 transition-colors">About</a>
+                    <a href="#experience" class="hover:text-gray-600 transition-colors">Experience</a>
+                    <a href="#projects" class="hover:text-gray-600 transition-colors">Projects</a>
+                    <a href="#contact" class="hover:text-gray-600 transition-colors">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
-<!-- Hero Section -->
-<section id="home" class="min-h-screen flex items-center justify-center pt-20">
-    <div class="container mx-auto px-6 text-center">
-        <div class="mb-8">
-            <img class="mx-auto w-48 h-48 rounded-full ring-4 ring-blue-500 object-cover"
-                src="./profile.jpeg" alt="Ajay Patel" />
-        </div>
-        <h1 class="text-5xl font-bold mb-4">Hi! I'm Ajay Patel</h1>
-        <h2 class="text-3xl text-blue-500 mb-8">Backend Developer</h2>
-        
-        <!-- Primary Actions -->
-        <div class="flex flex-wrap justify-center space-x-4 mb-6">
-            <a href="#contact"
-                class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg transition-colors">
-                <i class="fa-solid fa-user"></i>
-                Contact Me
-            </a>
-            <a href="./AjayPatelCV.pdf" target="_blank"
-                class="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg transition-colors">
-                <i class="fas fa-download mr-2"></i>Download CV
-            </a>
-        </div>
-        
-        <!-- Social Links -->
-        <div class="flex flex-wrap justify-center space-x-4">
-            <a href="https://linkedin.com/in/tronajay" target="_blank"
-                class="bg-[#0077B5] hover:bg-[#006399] text-white px-8 py-3 rounded-lg transition-colors">
-                <i class="fab fa-linkedin mr-2"></i>LinkedIn
-            </a>
-            <a href="https://github.com/tronajay" target="_blank"
-                class="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 rounded-lg transition-colors">
-                <i class="fab fa-github mr-2"></i>GitHub
-            </a>
-        </div>
-    </div>
-</section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
-            <div class="max-w-3xl mx-auto text-center">
-                <p class="text-lg text-gray-300 leading-relaxed">
-                    I am a passionate Backend Developer specializing in building robust and scalable server-side applications. 
-                        With expertise in Python, Django, and related technologies, I focus on creating efficient backend solutions 
-                        that power modern web applications.
+    <!-- Hero Section -->
+    <section class="section-padding pt-32 fade-in">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-6xl font-light mb-6 leading-tight">
+                    Software Developer
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+                    Skilled in Python, Django, and PostgreSQL with expertise in building scalable web applications, 
+                    APIs, and DevOps solutions. Passionate about creating innovative, user-centric solutions.
                 </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="bg-black text-white px-6 py-3 text-sm hover:bg-gray-800 transition-colors">
+                        Get in touch
+                    </a>
+                    <a href="./AjayPatelCV.pdf" target="_blank" class="border border-gray-300 px-6 py-3 text-sm hover:border-gray-400 transition-colors">
+                        Download CV
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-800 p-6 rounded-lg">
-                    <h3 class="text-xl font-bold mb-4 text-blue-500">Frontend</h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>HTML5 & CSS3</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>JavaScript</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>VueJs (Basic)</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Bootstrap CSS</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Tailwind CSS</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Flutter</li>
-                    </ul>
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div>
+                    <h2 class="text-2xl font-light mb-6">About</h2>
+                    <p class="text-gray-600 mb-6">
+                        I'm a passionate software developer with over 2.5 years of experience building robust backend solutions. 
+                        I specialize in Python and Django, with a strong foundation in cloud infrastructure and DevOps practices.
+                    </p>
+                    <p class="text-gray-600">
+                        Currently working at Thoughtwin, I focus on creating scalable applications that solve real-world problems, 
+                        from AI-powered chatbots to comprehensive event management platforms.
+                    </p>
                 </div>
-                <div class="bg-gray-800 p-6 rounded-lg">
-                    <h3 class="text-xl font-bold mb-4 text-blue-500">Backend</h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Python</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Django</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Django Rest Framework (Rest API)</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Redis</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Celery</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Postgres/Mysql</li>
-                    </ul>
-                </div>
-                <div class="bg-gray-800 p-6 rounded-lg">
-                    <h3 class="text-xl font-bold mb-4 text-blue-500">Tools & Others</h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Git & GitHub</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Docker</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Postman</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Jira</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>AWS</li>
-                    </ul>
+                <div>
+                    <h3 class="text-lg font-medium mb-4">Skills</h3>
+                    <div class="space-y-3 text-sm">
+                        <div>
+                            <strong class="text-gray-800">Backend:</strong>
+                            <span class="text-gray-600"> Python, Django, FastAPI, DRF, PostgreSQL, Redis, Celery</span>
+                        </div>
+                        <div>
+                            <strong class="text-gray-800">Frontend:</strong>
+                            <span class="text-gray-600"> HTML/CSS, JavaScript, Vue.js, Tailwind CSS, Flutter</span>
+                        </div>
+                        <div>
+                            <strong class="text-gray-800">Tools & Cloud:</strong>
+                            <span class="text-gray-600"> AWS, Docker, Git, CI/CD, Jira, Langchain</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Experience</h2>
-            <div class="max-w-4xl mx-auto">
-                <div class="relative pl-8 border-l-2 border-blue-500">
-                    <div class="mb-10">
-                        <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-2 mt-2"></div>
-                        <div class="bg-gray-900 p-6 rounded-lg mb-8">
-                            <div class="flex justify-between items-center mb-2">
-                                <h3 class="text-xl font-bold">Backend Developer</h3>
-                                <span class="text-blue-500">June 2022 - Present</span>
-                            </div>
-                            <p class="text-gray-400 mb-4">Upwards.in - Acquired by Lendingkart</p>
-                            <ul class="list-disc list-inside text-gray-300 space-y-2">
-                                <li>Crafted and deployed RESTful APIs for smooth client interaction</li>
-                                <li>Implemented key features to automate loan approval and disbursement processes</li>
-                                <li>Utilized a versatile tech stack including Python, Django, DRF, Postgres, Git, and AWS</li>
-                                <li>Facilitated teamwork across departments to refine backend performance and scalability iteratively</li>
-                            </ul>
-                        </div>
-                        <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-2 mt-2"></div>
-                        <div class="bg-gray-900 p-6 rounded-lg mb-8">
-                            <div class="flex justify-between items-center mb-2">
-                                <h3 class="text-xl font-bold">Backend Intern</h3>
-                                <span class="text-blue-500">Jan 2022 - June 2022</span>
-                            </div>
-                            <p class="text-gray-400 mb-4">MyDukaan.io</p>
-                            <ul class="list-disc list-inside text-gray-300 space-y-2">
-                                <li>Designed REST APIs using Django Rest Framework</li>
-                                <li>Developed web applications with Python, Django, Rest Framework, Postgres, and Git</li>
-                                <li>Utilized Python and Beautiful Soup for web scraping</li>
-                                <li>Collaborated with cross-functional teams to implement scalable backend solutions</li>
-                            </ul>
-                        </div>
-                        <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-2 mt-2"></div>
-                        <div class="bg-gray-900 p-6 rounded-lg">
-                            <div class="flex justify-between items-center mb-2">
-                                <h3 class="text-xl font-bold">Python Developer Intern</h3>
-                                <span class="text-blue-500">Dec 2021 - Jan 2022</span>
-                            </div>
-                            <p class="text-gray-400 mb-4">CodersArts</p>
-                            <ul class="list-disc list-inside text-gray-300 space-y-2">
-                                <li>Developed web applications with Python, Django and Postgres.</li>
-                                <li>Utilized Python for Desktop Applications.</li>
-                            </ul>
-                        </div>
+    <section id="experience" class="section-padding">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-2xl font-light mb-12">Experience</h2>
+            <div class="space-y-12">
+                <div class="border-l-2 border-gray-200 pl-6 relative">
+                    <div class="absolute w-2 h-2 bg-black rounded-full -left-1 top-0"></div>
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                        <h3 class="text-lg font-medium">Software Developer</h3>
+                        <span class="text-sm text-gray-500">Dec 2024 - Present</span>
                     </div>
+                    <p class="text-gray-600 mb-3">Thoughtwin</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Developed whitelabelling platform for global event organization</li>
+                        <li>• Built AI chatbot using Langchain for customer query resolution</li>
+                        <li>• Implemented features like custom domains, refunds, and discount codes</li>
+                        <li>• Technologies: Python, FastAPI, Flask, Langchain, PostgreSQL</li>
+                    </ul>
+                </div>
+
+                <div class="border-l-2 border-gray-200 pl-6 relative">
+                    <div class="absolute w-2 h-2 bg-black rounded-full -left-1 top-0"></div>
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                        <h3 class="text-lg font-medium">Backend Developer</h3>
+                        <span class="text-sm text-gray-500">June 2022 - Sept 2024</span>
+                    </div>
+                    <p class="text-gray-600 mb-3">Upwards.in (Acquired by Lendingkart)</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Crafted and deployed RESTful APIs for seamless client interaction</li>
+                        <li>• Automated loan approval and disbursement processes</li>
+                        <li>• Enhanced backend performance and scalability across departments</li>
+                        <li>• Technologies: Python, Django, DRF, PostgreSQL, AWS</li>
+                    </ul>
+                </div>
+
+                <div class="border-l-2 border-gray-200 pl-6 relative">
+                    <div class="absolute w-2 h-2 bg-black rounded-full -left-1 top-0"></div>
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                        <h3 class="text-lg font-medium">Backend Intern</h3>
+                        <span class="text-sm text-gray-500">Jan 2022 - June 2022</span>
+                    </div>
+                    <p class="text-gray-600 mb-3">MyDukaan.io</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Designed REST APIs using Django Rest Framework</li>
+                        <li>• Implemented web scraping solutions with Beautiful Soup</li>
+                        <li>• Collaborated on scalable backend architecture</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-gray-800 rounded-lg overflow-hidden">
-                    <a href="https://codeyaan.com" target="_blank">
-                        <img src="https://i.ibb.co/72JG1tv/Screenshot-2024-11-04-at-7-34-34-PM.png" alt="">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2 text-blue-500">codeYaan</h3>
-                            <p class="text-gray-300 mb-4">A coding platform to practice coding online and improve your skills.</p>
-                            <div class="flex">
-                                <a href="https://codeyaan.com" target="_blank" class="text-blue-500 hover:text-blue-400">View Live</a>
-                            </div>
-                            <div class="flex flex-wrap gap-2 mt-2">
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">Python</span>
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">Django</span>
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">Docker</span>
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">PostgreSQL</span>
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">Git</span>
-                            </div>
+    <section id="projects" class="section-padding bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-2xl font-light mb-12">Selected Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="group">
+                    <a href="https://codeyaan.com" target="_blank" class="block">
+                        <div class="aspect-video bg-gray-200 mb-4 rounded overflow-hidden">
+                            <img src="https://i.ibb.co/72JG1tv/Screenshot-2024-11-04-at-7-34-34-PM.png" 
+                                 alt="CodeYaan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-lg font-medium mb-2">CodeYaan</h3>
+                        <p class="text-sm text-gray-600 mb-3">
+                            Dynamic coding platform with IDE supporting 19 programming languages for practice and skill improvement.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            <span class="bg-gray-200 px-2 py-1 rounded">Python</span>
+                            <span class="bg-gray-200 px-2 py-1 rounded">Django</span>
+                            <span class="bg-gray-200 px-2 py-1 rounded">PostgreSQL</span>
                         </div>
                     </a>
                 </div>
-                <div class="bg-gray-800 rounded-lg overflow-hidden">
-                    <a href="https://collegecom.codeyaan.com" target="_blank">
-                        <img src="https://i.ibb.co/PZLmm72/Screenshot-2024-11-09-at-11-58-12-AM.png" alt="">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2 text-blue-500">CollegeCom</h3>
-                            <p class="text-gray-300 mb-4">A college community website that removes communication gap between students and faculties.</p>
-                            <div class="flex">
-                                <a href="https://collegecom.codeyaan.com" target="_blank" class="text-blue-500 hover:text-blue-400">View Live</a>
-                            </div>
-                            <div class="flex flex-wrap gap-2 mt-2">
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">Python</span>
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">Django</span>
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">WebSockets</span>
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">PostgreSQL</span>
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">Git</span>
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">Bootstrap</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="bg-gray-800 rounded-lg overflow-hidden">
-                    <a href="https://buzzle.us" target="_blank">
-                        <img src="https://i.ibb.co/1vbXkJ1/Screenshot-2024-11-05-at-4-48-24-PM.png" alt="">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2 text-blue-500">Buzzle (Flutter)</h3>
-                            <p class="text-gray-300 mb-4">Buzzle let's you Track your shopping receipts effortlessly, featuring seamless Gmail integration. Earn and redeem Buzz Coins by scanning bills for exciting offers. </p>
-                            <div class="flex">
-                                <a href="https://buzzle.us" target="_blank" class="text-blue-500 hover:text-blue-400">View Live</a>
-                            </div>
-                            <div class="flex flex-wrap gap-2 mt-2">
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">Flutter</span>
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">Python</span>
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">Django</span>
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">PostgreSQL</span>
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">Git</span>
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">LLM</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="bg-gray-800 rounded-lg overflow-hidden">
-                    <a href="https://popzone.site" target="_blank">
-                        <img src="https://i.ibb.co/pnbDFbZ/Screenshot-2024-11-04-at-7-34-52-PM.png" alt="">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2 text-blue-500">PopZone</h3>
-                            <p class="text-gray-300 mb-4">A gaming platform featuring popular games like Solitaire Classic and Carrom Clash.</p>
-                            <div class="flex">
-                                <a href="https://popzone.site" target="_blank" class="text-blue-500 hover:text-blue-400">View Live</a>
-                            </div>
-                            <div class="flex flex-wrap gap-2 mt-2">
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">Python</span>
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">Django</span>
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">DRF</span>
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">PostgreSQL</span>
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">Git</span>
-                                <span class="px-3 py-1 text-sm bg-blue-500 bg-opacity-20 text-blue-300 rounded-full border border-blue-500">Bootstrap</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Education Section -->
-    <section id="education" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Education</h2>
-            <div class="max-w-4xl mx-auto">
-                <div class="space-y-8">
-                    <div class="bg-gray-900 p-6 rounded-lg">
-                        <div class="flex justify-between items-center mb-2">
-                            <h3 class="text-xl font-bold">B.Tech (IT)</h3>
-                            <span class="text-blue-500">2018 - 2022</span>
+                <div class="group">
+                    <a href="https://buzzle.us" target="_blank" class="block">
+                        <div class="aspect-video bg-gray-200 mb-4 rounded overflow-hidden">
+                            <img src="https://i.ibb.co/1vbXkJ1/Screenshot-2024-11-05-at-4-48-24-PM.png" 
+                                 alt="Buzzle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         </div>
-                        <p class="text-gray-400">IIST Indore</p>
-                        <p class="text-gray-300 mt-2">Bachelor of Technology from Indore Institute of Science and Technology, IT Branch.</p>
-                    </div>
-                    <div class="bg-gray-900 p-6 rounded-lg">
-                        <div class="flex justify-between items-center mb-2">
-                            <h3 class="text-xl font-bold">Higher Secondary</h3>
-                            <span class="text-blue-500">2018</span>
+                        <h3 class="text-lg font-medium mb-2">Buzzle</h3>
+                        <p class="text-sm text-gray-600 mb-3">
+                            Shopping receipt tracker with Gmail integration, featuring Buzz Coins reward system and referral program.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            <span class="bg-gray-200 px-2 py-1 rounded">Flutter</span>
+                            <span class="bg-gray-200 px-2 py-1 rounded">Django</span>
+                            <span class="bg-gray-200 px-2 py-1 rounded">LLM</span>
                         </div>
-                        <p class="text-gray-400">Shiva Academy</p>
-                        <p class="text-gray-300 mt-2">Completed Higher Secondary from Shiva Academy, Indore with Madhya Pradesh State Board.</p>
+                    </a>
+                </div>
+
+                <div class="group">
+                    <a href="https://collegecom.codeyaan.com" target="_blank" class="block">
+                        <div class="aspect-video bg-gray-200 mb-4 rounded overflow-hidden">
+                            <img src="https://i.ibb.co/PZLmm72/Screenshot-2024-11-09-at-11-58-12-AM.png" 
+                                 alt="CollegeCom" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-lg font-medium mb-2">CollegeCom</h3>
+                        <p class="text-sm text-gray-600 mb-3">
+                            Community platform bridging communication between students and faculty in educational environments.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            <span class="bg-gray-200 px-2 py-1 rounded">Django</span>
+                            <span class="bg-gray-200 px-2 py-1 rounded">WebSockets</span>
+                            <span class="bg-gray-200 px-2 py-1 rounded">Bootstrap</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="group">
+                    <div class="block">
+                        <div class="aspect-video bg-gray-200 mb-4 rounded flex items-center justify-center">
+                            <img src="https://i.ibb.co/PzCdYTPv/image.png" 
+                                 alt="Workflowly" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-lg font-medium mb-2">Workflowly</h3>
+                        <p class="text-sm text-gray-600 mb-3">
+                            AI-powered web automation platform for automated testing from authentication to e-commerce workflows.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            <span class="bg-gray-200 px-2 py-1 rounded">Vue.js</span>
+                            <span class="bg-gray-200 px-2 py-1 rounded">Django</span>
+                            <span class="bg-gray-200 px-2 py-1 rounded">Selenium</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -290,59 +223,101 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
-            <div class="max-w-2xl mx-auto">
-                <form action="https://formspree.io/f/myyonlkw" method="POST" class="space-y-6">
-                    <div>
-                        <label for="full_name" class="block text-sm font-medium mb-2">Full Name</label>
-                        <input type="text" name="full_name" id="full_name" required
-                            class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500" />
+    <section id="contact" class="section-padding">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-2xl font-light mb-6">Get in touch</h2>
+                    <p class="text-gray-600 mb-8">
+                        I'm always interested in new opportunities and collaborations. 
+                        Let's discuss how we can work together.
+                    </p>
+                    <div class="space-y-4 text-sm">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-gray-400"></i>
+                            <a href="mailto:ajpatel762@gmail.com" class="hover:text-gray-600">ajpatel762@gmail.com</a>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fab fa-linkedin text-gray-400"></i>
+                            <a href="https://linkedin.com/in/tronajay" target="_blank" class="hover:text-gray-600">linkedin.com/in/tronajay</a>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fab fa-github text-gray-400"></i>
+                            <a href="https://github.com/tronajay" target="_blank" class="hover:text-gray-600">github.com/tronajay</a>
+                        </div>
                     </div>
-                    <div>
-                        <label for="email" class="block text-sm font-medium mb-2">Email</label>
-                        <input type="email" name="email" id="email" required
-                            class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500" />
-                    </div>
-                    <div>
-                        <label for="subject" class="block text-sm font-medium mb-2">Subject</label>
-                        <input type="text" name="subject" id="subject" required
-                            class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500" />
-                    </div>
-                    <div>
-                        <label for="message" class="block text-sm font-medium mb-2">Message</label>
-                        <textarea name="message" id="message" rows="4" required
-                            class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit"
-                            class="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 px-8 py-3 rounded-xl">
-                            Send Message
+                </div>
+                <div>
+                    <form action="https://formspree.io/f/myyonlkw" method="POST" class="space-y-6">
+                        <div>
+                            <input type="text" name="full_name" placeholder="Name" required
+                                class="w-full px-0 py-3 border-0 border-b border-gray-300 bg-transparent focus:outline-none focus:border-black transition-colors text-sm" />
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="Email" required
+                                class="w-full px-0 py-3 border-0 border-b border-gray-300 bg-transparent focus:outline-none focus:border-black transition-colors text-sm" />
+                        </div>
+                        <div>
+                            <input type="text" name="subject" placeholder="Subject" required
+                                class="w-full px-0 py-3 border-0 border-b border-gray-300 bg-transparent focus:outline-none focus:border-black transition-colors text-sm" />
+                        </div>
+                        <div>
+                            <textarea name="message" rows="4" placeholder="Message" required
+                                class="w-full px-0 py-3 border-0 border-b border-gray-300 bg-transparent focus:outline-none focus:border-black transition-colors text-sm resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="bg-black text-white px-6 py-3 text-sm hover:bg-gray-800 transition-colors">
+                            Send message
                         </button>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Footer Section -->
-<footer class="bg-gray-800 text-gray-300">
 
-    <!-- Bottom Footer -->
-    <div class="border-t border-gray-700">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="text-gray-400 text-sm">
-                    © 2024 Ajay Patel. All rights reserved.
-                </div>
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 py-8">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>© 2024 Ajay Patel. All rights reserved.</p>
                 <div class="mt-4 md:mt-0">
-                    <a href="#home" class="text-gray-400 hover:text-white transition-colors">
-                        <i class="fas fa-arrow-up mr-2"></i>
-                        Back to top
-                    </a>
+                    <a href="#" class="hover:text-gray-700 transition-colors">Back to top</a>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add fade-in animation to sections on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section:not(#hero)').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 </body>
+</html>
